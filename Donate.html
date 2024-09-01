@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Orphanage Care</title>
+    <link rel="stylesheet" href="Donate.css">
+</head>
+<body>
+    <header>
+        <h1>Support Our Orphanage</h1>
+    </header>
+
+    <section class="donate-section">
+        <h2>Make a Difference Today</h2>
+        <p>Your donation can bring a smile to a child's face. Every contribution helps.</p>
+        <div class="donate-images">
+            <img src="image1.jpg" alt="Happy children playing">
+            <img src="image2.jpg" alt="Children in school">
+            <img src="image3.jpg" alt="Orphanage activities">
+            <img src="image4.jpg" alt="Children receiving care">
+        </div>
+
+        <div class="donation-options">
+            <h3>Select a Donation Amount</h3>
+            <form action="process_donation.php" method="post">
+                <label for="donation-amount">Choose amount:</label>
+                <select id="donation-amount" name="donation_amount">
+                    <option value="50">$50</option>
+                    <option value="100">$100</option>
+                    <option value="200">$200</option>
+                    <option value="500">$500</option>
+                    <option value="1000">$1000</option>
+                </select>
+
+                <label for="custom-amount">Or enter a custom amount:</label>
+                <input type="text" id="custom-amount" name="custom_amount" placeholder="Enter amount">
+
+                <button type="submit" class="donate-btn">Donate Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Orphanage Care. All rights reserved.</p>
+    </footer>
+</body>
+</html>
